@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>رنا الحربي | الملف المهني</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #0B1F33;
+            color: #FFFFFF;
+            font-family: Arial, sans-serif;
+        }
+		nav {
+    width: 100%;
+    padding: 25px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0B1F33;
+}
+
+.logo {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.nav-links a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+    position: relative;
+    transition: 0.3s;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #C9A96E;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #C9A96E;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+		#home {
+    min-height: 80vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #0B1F33;
+}
+
+.hero-content {
+    width: 100%;
+    max-width: 800px;
+}
+
+.hero-small {
+    color: #C9A96E;
+    letter-spacing: 2px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.hero-content h1 {
+    color: #FFFFFF;
+    font-size: 60px;
+    margin: 10px 0;
+    letter-spacing: 4px;
+    position: relative;
+    display: inline-block;
+}
+
+.hero-content h1::after {
+    content: "";
+    display: block;
+    width: 70px;
+    height: 3px;
+    background-color: #C9A96E;
+    margin: 12px auto 0;
+}
+
+.hero-content h2 {
+    color: #D9DEE3;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 15px 0;
+}
+
+.hero-description {
+    color: #B8C0C8;
+    font-size: 16px;
+    line-height: 1.9;
+    max-width: 650px;
+    margin: 20px auto;
+}
+
+.hero-buttons {
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 13px 28px;
+    margin: 5px;
+    border: 1px solid #C9A96E;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.hero-buttons a:hover {
+    background-color: #C9A96E;
+    color: #0B1F33;
+}
+		#about {
+    width: 100%;
+    background-color: #F4F6F8;
+    color: #0B1F33;
+    padding: 100px 60px;
+    margin: 0;
+    text-align: center;
+}
+
+#about .section-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#about .section-small {
+    color: #0B1F33;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+	text-aling: center;
+
+}
+
+#about h2 {
+    color: #0B1F33;
+    font-size: 40px;
+    margin: 10px 0 30px;
+}
+
+#about p {
+    color: #4D5965;
+    font-size: 17px;
+    line-height: 2;
+    text-align: right;
+    margin: 0 0 20px;
+}
+		#experience {
+    width: 100%;
+    background-color: #0B1F33;
+    color: #FFFFFF;
+    padding: 100px 60px;
+    margin: 0;
+    text-align: center;
+}
+
+#experience .section-content {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+#experience .section-small {
+    color: #C9A96E;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+#experience h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+
+.experience-card {
+    background-color: #132B43;
+    padding: 30px;
+    margin: 25px auto;
+    text-align: right;
+    border-right: 3px solid #C9A96E;
+    max-width: 800px;
+}
+
+.experience-card h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin: 0 0 10px;
+}
+
+.experience-role {
+    color: #C9A96E !important;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: #D9DEE3;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+}
+#skills {
+    width: 100%;
+    background-color: #F4F6F8;
+    color: #0B1F33;
+    padding: 100px 60px;
+    margin: 0;
+    text-align: center;
+}
+
+#skills .section-content {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#skills .section-small {
+    color: #0B1F33;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+#skills h2 {
+    color: #0B1F33;
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.skill-card {
+    background-color: #FFFFFF;
+    width: 50%;
+    padding: 30px;
+    text-align: right;
+    border-top: 3px solid #C9A96E;
+    box-shadow: 0 5px 20px rgba(11, 31, 51, 0.08);
+}
+
+.skill-card h3 {
+    color: #0B1F33;
+    font-size: 22px;
+    margin-top: 0;
+}
+
+.skill-card ul {
+    margin: 0;
+    padding-right: 20px;
+    line-height: 2;
+}
+
+.skill-card li {
+    color: #4D5965;
+    font-size: 15px;
+}
+		#certificates {
+    width: 100%;
+    background-color: #0B1F33;
+    color: #FFFFFF;
+    padding: 100px 60px;
+    margin: 0;
+    text-align: center;
+}
+
+#certificates .section-content {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+#certificates .section-small {
+    color: #C9A96E;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+#certificates h2 {
+    color: #FFFFFF;
+    font-size: 40px;
+    margin: 10px 0 40px;
+}
+
+.certificate-card {
+    background-color: #132B43;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 35px;
+    text-align: right;
+    border-right: 3px solid #C9A96E;
+}
+
+.certificate-card h3 {
+    color: #FFFFFF;
+    font-size: 22px;
+    margin: 0 0 15px;
+}
+
+.certificate-card p {
+    color: #D9DEE3;
+    font-size: 16px;
+    line-height: 1.9;
+    margin: 0;
+}
+		#contact {
+    width: 100%;
+    background-color: #F4F6F8;
+    color: #0B1F33;
+    padding: 100px 60px;
+    margin: 0;
+    text-align: center;
+}
+
+#contact .section-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#contact .section-small {
+    color: #0B1F33;
+    font-size: 14px;
+    letter-spacing: 2px;
+    margin: 0 0 15px;
+}
+
+#contact h2 {
+    color: #0B1F33;
+    font-size: 40px;
+    margin: 10px 0 25px;
+}
+
+#contact .contact-description {
+    color: #4D5965;
+    font-size: 17px;
+    line-height: 2;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.contact-info {
+    margin-top: 35px;
+}
+
+.contact-info a {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 5px;
+    border: 1px solid #0B1F33;
+    color: #0B1F33;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    background-color: #0B1F33;
+    color: #FFFFFF;
+}
+		@media (max-width: 768px) {
+
+    nav {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .nav-links a {
+        font-size: 13px;
+    }
+
+    #home {
+        min-height: 75vh;
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 42px;
+    }
+
+    .hero-content h2 {
+        font-size: 17px;
+        line-height: 1.7;
+    }
+
+    .hero-description {
+        font-size: 15px;
+    }
+
+    #about,
+    #experience,
+    #certificates,
+    #skills,
+    #contact {
+        padding: 70px 20px;
+    }
+
+    #about h2,
+    #experience h2,
+    #certificates h2,
+    #skills h2,
+    #contact h2 {
+        font-size: 32px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .skill-card {
+        width: 100%;
+    }
+
+    .experience-card,
+    .certificate-card {
+        width: 100%;
+    }
+
+}
+		footer {
+    width: 100%;
+    background-color: #0B1F33;
+    color: #B8C0C8;
+    text-align: center;
+    padding: 25px 20px;
+    font-size: 13px;
+    margin: 0;
+}
+
+footer p {
+    margin: 0;
+}
+.hero-buttons a[href$=".pdf"] {
+    background-color: #C9A96E;
+    color: #0B1F33;
+    font-weight: bold;
+    border: 2px solid #C9A96E;
+    padding: 14px 30px;
+    box-shadow: 0 4px 15px rgba(201, 169, 110, 0.25);
+    transition: 0.3s;
+}
+
+.hero-buttons a[href$=".pdf"]:hover {
+    background-color: #FFFFFF;
+    color: #0B1F33;
+    border-color: #FFFFFF;
+    transform: translateY(-2px);
+}
+
+.hero-buttons a[href$=".pdf"]:hover {
+    background-color: #FFFFFF;
+    color: #0B1F33;
+}
+		section {
+    border-bottom: 1px solid #C9A96E;
+}
+    </style>
+
+</head>
+
+<body>
+<nav>
+
+    <a href="#home" class="logo">RANA</a>
+
+    <div class="nav-links">
+        <a href="#home">الرئيسية</a>
+        <a href="#about">نبذة عني</a>
+        <a href="#experience">الخبرات</a>
+        <a href="#skills">المهارات</a>
+        <a href="#certificates">الشهادات</a>
+        <a href="#contact">تواصل معي</a>
+    </div>
+
+</nav>
+	<header id="home">
+
+    <div class="hero-content">
+
+        <p class="hero-small">مرحبًا بك في ملفي المهني</p>
+
+        <h1>رنا الجابري</h1>
+
+        <h2>خريجة وسائط متعددة | مهتمة بالمجال الإداري والإبداعي</h2>
+
+        <p class="hero-description">
+            خريجة وسائط متعددة، لدي خبرة في المجال الإداري والإشراف الإداري،
+            وتنظيم وإدارة البيانات، وإعداد التقارير، والتنسيق والمتابعة.
+            أمتلك مهارات في استخدام البرامج المكتبية والتصميم،
+            وأسعى لتطوير خبراتي والمساهمة بفعالية في بيئة عمل احترافية.
+        </p>
+
+    <div class="hero-buttons">
+
+    <a href="#about">نبذة عني</a>
+
+    <a href="#contact">تواصل معي</a>
+
+    <a href="Rana-Aljabri-CV.pdf" download>
+    📄 تحميل السيرة الذاتية
+    </a>
+
+</div>
+
+    </div>
+
+</header>
+	<section id="about">
+
+    <div class="section-content">
+
+        <p class="section-small">نبذة عني</p>
+
+        <h2>من أنا؟</h2>
+
+        <p>
+            خريجة دبلوم تقنية الوسائط المتعددة، لدي خبرة في المجال الإداري
+            والإشراف الإداري، وتنظيم وإدارة البيانات، وإعداد التقارير،
+            والتنسيق والمتابعة.
+        </p>
+
+        <p>
+            أمتلك مهارات في التواصل والعمل ضمن فريق، والتخطيط والتنظيم،
+            وأسعى إلى تطوير خبراتي والمساهمة بفعالية في بيئة عمل احترافية.
+        </p>
+
+    </div>
+
+</section>
+	<section id="experience">
+
+    <div class="section-content">
+
+        <p class="section-small">الخبرات والتدريب</p>
+
+        <h2>خبرتي العملية</h2>
+
+        <div class="experience-card">
+
+            <h3>هيئة تطوير منطقة المدينة المنورة</h3>
+
+            <p class="experience-role">
+                إدارة رأس المال البشري | برنامج تمهير
+            </p>
+
+            <p>
+                اكتسبت خبرة في الأعمال الإدارية والإشراف الإداري،
+                وتنظيم وإدارة البيانات، وإعداد التقارير، والتنسيق والمتابعة.
+            </p>
+
+        </div>
+
+        <div class="experience-card">
+
+            <h3>مستشفى الحرس الوطني</h3>
+
+            <p class="experience-role">
+                قسم العلاقات العامة والإعلام | تدريب تعاوني
+            </p>
+
+            <p>
+                شاركت في تنظيم وتغطية الفعاليات، وإعداد التصاميم والمحتوى الإعلامي،
+                والمساهمة في إعداد التقارير والمواد الخاصة بالفعاليات.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="certificates">
+
+    <div class="section-content">
+
+        <p class="section-small">المؤهلات والشهادات </p>
+
+        <h2>شهاداتي</h2>
+
+        <div class="certificate-card">
+
+            <h3>الأعمال المعتمد في القيادة (CBP-L)</h3>
+
+            <p class="certificate-provider">
+                الجهة المانحة: الجمعية الدولية للتدريب على الأعمال (IBTA)
+            </p>
+
+            <p>
+                شهادة احترافية معتمدة في مجال القيادة، تعكس اكتسابي
+                للمعارف والمهارات المهنية المرتبطة بالقيادة في بيئة الأعمال.
+            </p>
+
+        </div>
+
+        <div class="certificate-card">
+
+            <h3>الدبلوم المهني في الأمن السيبراني</h3>
+
+            <p>
+                شهادة مهنية تعكس اكتسابي للمعرفة والمهارات الأساسية
+                في مجال الأمن السيبراني.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="skills">
+
+    <div class="section-content">
+
+        <p class="section-small">المهارات</p>
+
+        <h2>مهاراتي</h2>
+
+        <div class="skills-container">
+
+            <div class="skill-card">
+                <h3>المهارات التقنية</h3>
+
+                <ul>
+                    <li>Microsoft Excel</li>
+                    <li>Microsoft PowerPoint</li>
+                    <li>Google Sheets</li>
+                    <li>Adobe Photoshop</li>
+                    <li>Adobe Illustrator</li>
+                    <li>التصوير الفوتوغرافي</li>
+                    <li>التغطية الإعلامية والتوثيق</li>
+                    <li>إعداد التقارير والعروض التقديمية</li>
+                    <li>إدارة وتنظيم البيانات</li>
+                </ul>
+            </div>
+
+            <div class="skill-card">
+                <h3>المهارات الشخصية</h3>
+
+                <ul>
+                    <li>إدارة الوقت</li>
+                    <li>المهارات التنظيمية</li>
+                    <li>التعاون والعمل ضمن فريق</li>
+                    <li>التفكير الإبداعي والابتكار</li>
+                    <li>سرعة التعلم والتكيف مع التقنيات الحديثة</li>
+                    <li>مهارات التواصل الفعال</li>
+                    <li>الاهتمام بالتفاصيل</li>
+                    <li>التخطيط والتنسيق</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<section id="contact">
+
+    <div class="section-content">
+
+        <p class="section-small">تواصل معي</p>
+
+        <h2>يسعدني تواصلك</h2>
+
+        <p class="contact-description">
+            أرحب بفرص العمل والتعاون المهني، ويسعدني التواصل معي
+            لمناقشة الفرص المناسبة.
+        </p>
+
+        <div class="contact-info">
+
+            <a href="mailto:aljabryrna77@gmail.com">
+                البريد الإلكتروني
+            </a>
+
+            <a href="https://www.linkedin.com/in/rana-aljabri-2026-sa"
+               target="_blank">
+                LinkedIn
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+	<footer>
+
+    <p>© 2026 رنا الحربي — جميع الحقوق محفوظة</p>
+
+</footer>
+				
+</body>
+
+</html>
+
+	
